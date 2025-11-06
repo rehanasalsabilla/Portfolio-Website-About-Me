@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-linear-to-b from-[#0f172a] via-[#1e293b] to-[#334155] text-white font-sans;
+}
