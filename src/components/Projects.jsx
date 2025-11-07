@@ -80,13 +80,6 @@ const webProjects = [
 
 const mobileProjects = [
   {
-    title: "FP-Mobile-Agriculture-App",
-    description:
-      "AgriVision adalah aplikasi mobile berbasis Android yang membantu petani memantau kesehatan tanaman dan mengelola lahan secara efisien menggunakan teknologi GPS dan speech-to-text.",
-    stack: ["Android Studio", "Java", "TensorFlow Lite", "Firebase"],
-    link: "https://github.com/rehanasalsabilla/FP-Mobile-Agriculture-App-",
-  },
-  {
     title: "Project Capstone RoboT IT",
     description:
       "An IoT and AI-based robot system designed to welcome guests and deliver automated, informative interactions.",
