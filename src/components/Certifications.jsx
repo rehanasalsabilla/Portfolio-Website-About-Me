@@ -13,7 +13,7 @@ const Certifications = () => {
       title: "Mini Bootcamp Introduction to Data Analytics - Study Case Bootcamp Data Analyst with Excel",
       issuer: "DQLab",
       date: "Aug 2025",
-      link: "https://academy.dqlab.id/certificate/pdf/DQLABMB7SPBKWMLN",
+      link: "https://academy.dqlab.id//certificate/pdf/DQLABMB7EXCFKGDOT",
     },
     {
       title: "Mini Bootcamp Introduction to Data Analytics - Study Case Bootcamp Data Analyst with SQL & Python",
