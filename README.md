@@ -29,11 +29,11 @@ Proyek ini dirancang sebagai representasi digital dari identitas profesional say
 
 ## 🎨 UI Highlights
 
-✨ **Hero Section**  
-Memperkenalkan developer dengan tautan media sosial dan animasi fade-in yang halus.
-
-👩‍💻 **About Section**  
+✨ **Hero/Home Section**  
 Berisi gambaran umum tentang latar belakang dan minat pribadi.
+
+🧩 **Experience Section**  
+Menampilkan pengalaman seperti magang, kolaborasi, dan penelitian.
 
 🧠 **Skills Section**  
 Dikategorikan menjadi tiga bidang utama:  
@@ -41,11 +41,14 @@ Dikategorikan menjadi tiga bidang utama:
 - **Web Development**  
 - **Mobile App Development**
 
-🧩 **Experience Section**  
-Menampilkan linimasa (timeline) pengalaman seperti magang, kolaborasi, dan penelitian.
-
 🚀 **Projects Section**  
 Menampilkan proyek akademik dan pribadi dengan tautan langsung ke GitHub.
+
+💼 **Certification**
+Menampilkan certification yang pernah di ambil
+
+📄 **CV Section**
+Menampilkan button yang mengarahkan pada download cv Rehana Putri Salsabilla
 
 📫 **Contact Section**  
 Menyediakan cara cepat untuk terhubung secara profesional melalui berbagai platform.
