@@ -1,18 +1,99 @@
-https://rehanaprofile.netlify.app/
+# 🌐 Website Portofolio Rehana Putri
 
-# React + Vite
+Website portofolio pribadi ini dibuat untuk menampilkan profil, proyek, pengalaman, dan kontak profesional secara interaktif dan modern. Dibangun menggunakan **React.js** dengan **Tailwind CSS** untuk tampilan yang responsif dan estetis.  
+Proyek ini dirancang sebagai representasi digital dari identitas profesional saya di bidang teknologi dan pengembangan web.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Desain Responsif dan Modern** — Menggunakan Tailwind CSS untuk tampilan bersih dan nyaman di berbagai ukuran layar.  
+- 💼 **Section Portofolio** — Menampilkan proyek-proyek yang telah saya kerjakan dengan deskripsi, teknologi, dan tautan ke GitHub.  
+- 🧍‍♀️ **Tentang Saya (About Me)** — Berisi deskripsi singkat mengenai latar belakang, minat, dan keahlian saya.  
+- 📄 **CV dan Kontak** — Pengunjung dapat melihat dan mengunduh CV serta menghubungi saya melalui email atau media sosial.  
+- 💬 **Interaktif & Animatif** — Menggunakan animasi lembut untuk transisi antar komponen agar pengalaman pengguna lebih menarik.  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Teknologi yang Digunakan
 
-## Expanding the ESLint configuration
+| Komponen | Deskripsi |
+|-----------|------------|
+| **React.js** | Framework frontend berbasis komponen untuk membangun antarmuka dinamis dan interaktif. |
+| **Tailwind CSS** | Framework CSS utility-first untuk membuat desain yang konsisten dan cepat. |
+| **Lucide React** | Library ikon modern yang ringan dan mudah digunakan. |
+| **Framer Motion** | Digunakan untuk animasi halus pada elemen-elemen di halaman. |
+| **Vite** | Build tool untuk pengembangan cepat dan efisien. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎨 UI Highlights
+
+✨ **Hero Section**  
+Memperkenalkan developer dengan tautan media sosial dan animasi fade-in yang halus.
+
+👩‍💻 **About Section**  
+Berisi gambaran umum tentang latar belakang dan minat pribadi.
+
+🧠 **Skills Section**  
+Dikategorikan menjadi tiga bidang utama:  
+- **Data Analyst**  
+- **Web Development**  
+- **Mobile App Development**
+
+🧩 **Experience Section**  
+Menampilkan linimasa (timeline) pengalaman seperti magang, kolaborasi, dan penelitian.
+
+🚀 **Projects Section**  
+Menampilkan proyek akademik dan pribadi dengan tautan langsung ke GitHub.
+
+📫 **Contact Section**  
+Menyediakan cara cepat untuk terhubung secara profesional melalui berbagai platform.
+
+---
+
+## ⚙️ Installation & Setup
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal di mesin Anda.
+
+### Prasyarat
+
+Pastikan Anda telah menginstal [Node.js](https://nodejs.org/) dan [npm/yarn] di sistem Anda.
+
+### Langkah-langkah Instalasi
+
+1.  **Clone repository ini:**
+    ```bash
+    git clone [https://github.com/yourusername/portfolio-react.git](https://github.com/yourusername/portfolio-react.git)
+    ```
+2.  **Arahkan ke direktori proyek:**
+    ```bash
+    cd portfolio-react
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # atau
+    # yarn install
+    ```
+4.  **Jalankan development server:**
+    ```bash
+    npm run dev
+    # atau
+    # yarn dev
+    ```
+
+> 💡 Proyek akan berjalan di `http://localhost:5173` di browser Anda.
+
+---
+
+## 💡 Future Improvements
+
+Berikut adalah daftar fitur yang direncanakan untuk pengembangan di masa mendatang:
+
+* 🌙 **Dark mode support**
+* 🗂️ **Integration with CMS** untuk konten dinamis (misalnya, Sanity, Strapi)
+* 📊 **Tambahkan *project filtering* dan *search***
+* 🌐 **Multi-language support**
+
+---
