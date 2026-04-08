@@ -6,7 +6,7 @@ import { Github } from "lucide-react";
 const featuredProject = {
   title: "Sales Performance Analysis Dashboard (Kimia Farma)",
   description:
-    "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces. Built an interactive dashboard in Looker Studio to visualize key metrics such as net sales, profit distribution, and branch performance, enabling data-driven decision making.",
+    "Identified top-performing provinces and uncovered branches with high ratings but low transaction volume. Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces. Built an interactive dashboard in Looker Studio to visualize key metrics such as net sales, profit distribution, and branch performance, enabling data-driven decision making.",
   stack: ["BigQuery", "SQL", "Looker Studio", "Data Analysis"],
   link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
 };

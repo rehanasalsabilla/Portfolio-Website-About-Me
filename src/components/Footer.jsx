@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Let's Connect!</h2>
         <p className="text-blue-200 mb-4">
-          I’d love to connect! Feel free to reach out via social media or email me directly.
+          Let’s connect and build impactful data-driven solutions together
         </p>
 
         <div className="flex justify-center gap-6">

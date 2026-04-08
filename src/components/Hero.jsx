@@ -24,7 +24,7 @@ const Hero = () => {
 
         {/* HEADLINE */}
         <p className="text-lg md:text-xl text-gray-200 mb-4">
-          Data Analyst Enthusiast focused on transforming data into actionable insights.
+          Data Analyst Enthusiast focused on transforming data into actionable insights. Turning data into actionable insights to support better business decisions.
         </p>
 
         {/* SKILL HIGHLIGHT */}
