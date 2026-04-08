@@ -31,6 +31,17 @@ const Experience = () => {
         "Generated actionable insights to support business decision-making.",
       ],
     },
+    {
+      company: "Cerelates - Data Analyst & Business Intelligence Bootcamp",
+      position: "Data Analyst Trainee",
+      period: "Mar 2026 – Present",
+      description: [
+        "Performed data cleaning, preprocessing, and exploratory data analysis on real-world datasets.",
+        "Developed data visualizations and dashboards to generate business insights.",
+        "Worked on case studies to support data-driven decision making.",
+        "Utilized tools such as SQL, Python, Excel, and Power BI for analysis and reporting.",
+      ],
+    },
   ];
 
   return (
