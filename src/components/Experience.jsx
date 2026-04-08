@@ -10,7 +10,7 @@ const Experience = () => {
       company: "Dinas Komunikasi dan Informatika – Kabupaten Madiun",
       logo: kominfoLogo,
       position: "Internship Full Stack Developer",
-      period: "Jan 2025 – Mar 2025",
+      period: "Jan 2025 – March 2025",
       description: [
         "Developed responsive web applications using Laravel, Vue.js, and Inertia.js.",
         "Implemented CRUD functionalities and optimized MySQL database schema design.",
@@ -23,7 +23,7 @@ const Experience = () => {
       company: "Rakamin Academy x Kimia Farma",
       logo: rakaminLogo,
       position: "Project Based Internship - Big Data Analytics",
-      period: "2024",
+      period: "March 2024 - April 2024",
       description: [
         "Performed exploratory data analysis (EDA) on large-scale datasets.",
         "Built and evaluated machine learning models for classification tasks.",
