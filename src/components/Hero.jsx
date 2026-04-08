@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import fotoDiri from "../assets/foto-profile.jpg";
+import fotoDiri from "../assets/foto-profile.jpeg";
 import cvRehana from "../assets/cv_rehana.pdf";
 
 const Hero = () => {
