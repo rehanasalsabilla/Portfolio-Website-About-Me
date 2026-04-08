@@ -4,6 +4,18 @@ import { Award } from "lucide-react";
 const Certifications = () => {
   const certificates = [
     {
+      title: "Big Data Analytics Project (Kimia Farma x Rakamin)",
+      issuer: "Rakamin Academy x Kimia Farma",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1uVlmtJjKcQyNGOiE7LQ4iLgGLhfv0Kuk/view?usp=sharing",
+    },
+    {
+      title: "Artificial Intelligence Fundamentals",
+      issuer: "AI Certification",
+      date: "2025",
+      link: "https://drive.google.com/file/d/1-p5xqDePCQnQTXC-5nvMZcOY7PeaIxOk/view?usp=sharing",
+    },
+    {
       title: "Data Analyst with SQL & Python",
       issuer: "DQLab",
       date: "Aug 2025",
@@ -58,10 +70,9 @@ const Certifications = () => {
         </h2>
         <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
           Selected certifications that reflect my continuous learning in data analysis,
-          machine learning, and technical skills.
+          machine learning, and real-world project experience.
         </p>
 
-        {/* GRID 4 KOLOM */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {certificates.map((cert, index) => (
             <a
