@@ -9,7 +9,7 @@ const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-16 pt-28 pb-20 
-      bg-gradient-to-br from-cyan-800 via-gray-900 to-[#162d64] text-white"
+      bg-linear-to-br from-cyan-800 via-gray-900 to-[#162d64] text-white"
     >
       {/* LEFT */}
       <motion.div
