@@ -31,6 +31,20 @@ const featuredProjects = [
     stack: ["Python", "Scikit-learn", "TensorFlow", "NLP"],
     link: "https://github.com/rehanasalsabilla/Emotion-Classification",
   },
+  {
+  title: "Sales Performance Analysis Dashboard (Kimia Farma)",
+  description:
+    "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces. Built an interactive dashboard in Looker Studio to visualize key metrics such as net sales, profit distribution, and branch performance, enabling data-driven decision making.",
+  stack: ["SQL (BigQuery)", "Looker Studio", "Data Analysis", "Dashboard"],
+  link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
+  },
+  {
+  title: "AI-Based Health & Weather Assistant",
+  description:
+    "Developed an AI-based assistant that integrates weather data and health recommendations to provide personalized insights. Implemented machine learning logic to enhance user interaction and decision support.",
+  stack: ["Python", "Machine Learning", "API Integration"],
+  link: "https://github.com/rehanasalsabilla/Health-Weather-Assistant",
+  },
 ];
 
 const ProjectCard = ({ title, description, link, stack }) => (
