@@ -83,7 +83,7 @@ const Experience = () => {
               <img
                 src={exp.logo}
                 alt={exp.company}
-                className="w-12 h-12 object-contain rounded-md bg-white p-1"
+                className="w-16 h-16 object-contain rounded-md bg-white p-1"
               />
 
               <div>
