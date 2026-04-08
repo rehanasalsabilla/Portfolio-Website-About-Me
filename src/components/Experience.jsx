@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import kominfoLogo from "../assets/kominfo.png";
+import kominfoLogo from "../assets/diskominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
 
 const Experience = () => {
