@@ -36,7 +36,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-20 px-6 md:px-16 bg-gradient-to-br from-blue-900 via-slate-900 to-cyan-900 text-white"
+      className="py-20 px-6 md:px-16 bg-linear-to-br from-blue-900 via-slate-900 to-cyan-900 text-white"
     >
       {/* Header */}
       <motion.div
