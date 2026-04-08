@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import kominfoLogo from "../assets/diskominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
+import celeratesLogo from "../assets/celerates.png";
 
 const Experience = () => {
   const experiences = [
@@ -33,6 +34,7 @@ const Experience = () => {
     },
     {
       company: "Cerelates - Data Analyst & Business Intelligence Bootcamp",
+      logo: celeratesLogo,
       position: "Data Analyst Trainee",
       period: "Mar 2026 – Present",
       description: [
