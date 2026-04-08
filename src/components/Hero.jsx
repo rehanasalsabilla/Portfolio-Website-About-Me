@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Linkedin, Github, Mail } from "lucide-react";
 import fotoDiri from "../assets/foto-profile.jpeg";
 import cvRehana from "../assets/cv_rehana.pdf";
 
@@ -8,24 +9,31 @@ const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-16 pt-28 pb-20 
-        bg-linear-to-br from-cyan-800 via-gray-800 to-[#162d64] text-white"
+      bg-gradient-to-br from-cyan-800 via-gray-900 to-[#162d64] text-white"
     >
-      {/* Kiri */}
+      {/* LEFT */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="md:w-1/2 text-center md:text-left"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           Hi, I’m <span className="text-cyan-300">Rehana</span> 👋
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-200 mb-6">
-          Data Analyst Enthusiast with experience in data analysis, visualization, and machine learning. Passionate about transforming data into actionable insights.
+        {/* HEADLINE */}
+        <p className="text-lg md:text-xl text-gray-200 mb-4">
+          Data Analyst Enthusiast focused on transforming data into actionable insights.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+        {/* SKILL HIGHLIGHT */}
+        <p className="text-sm text-gray-400 mb-6">
+          Python • SQL (BigQuery) • Power BI • Looker Studio • Machine Learning
+        </p>
+
+        {/* CTA BUTTON */}
+        <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6">
           <a
             href="#projects"
             className="bg-cyan-400 text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-cyan-300 transition-all"
@@ -41,9 +49,35 @@ const Hero = () => {
             Download CV
           </a>
         </div>
+
+        {/* SOCIAL ICONS (DIPINDAH DARI FOOTER 🔥) */}
+        <div className="flex justify-center md:justify-start gap-4">
+          <a
+            href="https://www.linkedin.com/in/rehana-putri/"
+            target="_blank"
+            className="p-2 bg-white/10 rounded-full hover:bg-cyan-400 hover:text-blue-900 transition"
+          >
+            <Linkedin size={20} />
+          </a>
+
+          <a
+            href="https://github.com/rehanasalsabilla"
+            target="_blank"
+            className="p-2 bg-white/10 rounded-full hover:bg-cyan-400 hover:text-blue-900 transition"
+          >
+            <Github size={20} />
+          </a>
+
+          <a
+            href="mailto:rehanaputri80@gmail.com"
+            className="p-2 bg-white/10 rounded-full hover:bg-cyan-400 hover:text-blue-900 transition"
+          >
+            <Mail size={20} />
+          </a>
+        </div>
       </motion.div>
 
-      {/* Kanan */}
+      {/* RIGHT */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -56,9 +90,12 @@ const Hero = () => {
           className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-cyan-300 shadow-lg object-cover"
         />
 
+        {/* ABOUT */}
         <p className="mt-6 text-sm md:text-base text-gray-200 max-w-lg text-justify leading-relaxed">
-          I am an Information Technology student at ITS with a strong focus on data analysis and data-driven solutions. Experienced in working with real-world datasets, including sales analysis and dashboard development using tools such as Python, SQL (BigQuery), and Power BI/Looker Studio. 
-          I have built machine learning and data analysis projects to extract insights, identify patterns, and support decision-making. I am passionate about turning complex data into meaningful and impactful insights.
+          I am an Information Technology student at ITS with a strong focus on data analysis and data-driven solutions. 
+          Experienced in working with real-world datasets, including sales analysis and dashboard development using 
+          Python, SQL (BigQuery), and Power BI/Looker Studio. I build data-driven solutions to uncover insights, 
+          identify patterns, and support business decision-making.
         </p>
       </motion.div>
     </section>
