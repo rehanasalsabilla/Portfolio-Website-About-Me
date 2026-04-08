@@ -54,51 +54,45 @@ const Experience = () => {
         </p>
       </motion.div>
 
-      {/* Timeline */}
-      <div className="flex flex-col gap-12">
+      {/* GRID 2 KOLOM */}
+      <div className="grid md:grid-cols-2 gap-8">
         {experiences.map((exp, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`flex ${
-              index % 2 === 0 ? "justify-start" : "justify-end"
-            }`}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
           >
-            <motion.div
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="w-full md:w-1/2 bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
-            >
-              {/* Header (Left aligned) */}
-              <div className="flex items-start gap-4 mb-4">
-                <img
-                  src={exp.logo}
-                  alt={exp.company}
-                  className="w-12 h-12 object-contain rounded-md bg-white p-1"
-                />
+            {/* Header */}
+            <div className="flex items-start gap-4 mb-4">
+              <img
+                src={exp.logo}
+                alt={exp.company}
+                className="w-12 h-12 object-contain rounded-md bg-white p-1"
+              />
 
-                <div className="text-left">
-                  <h3 className="text-xl font-semibold">
-                    {exp.company}
-                  </h3>
-                  <p className="text-sm text-gray-400 italic">
-                    {exp.period}
-                  </p>
-                  <p className="text-cyan-200 font-medium">
-                    {exp.position}
-                  </p>
-                </div>
+              <div>
+                <h3 className="text-lg font-semibold">
+                  {exp.company}
+                </h3>
+                <p className="text-sm text-gray-400 italic">
+                  {exp.period}
+                </p>
+                <p className="text-cyan-200 font-medium">
+                  {exp.position}
+                </p>
               </div>
+            </div>
 
-              {/* Description */}
-              <ul className="text-gray-200 list-disc list-inside space-y-2 text-left">
-                {exp.description.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
+            {/* Description */}
+            <ul className="text-gray-200 list-disc list-inside space-y-2 text-left text-sm">
+              {exp.description.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </motion.div>
         ))}
       </div>
     </section>
