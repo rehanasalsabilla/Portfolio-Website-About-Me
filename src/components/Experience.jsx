@@ -1,19 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
+import kominfoLogo from "../assets/diskominfo.png";
+import rakaminLogo from "../assets/rakamin.png";
 
 const Experience = () => {
-  const experience = {
-    company: "Dinas Komunikasi dan Informatika – Kabupaten Madiun",
-    position: "Internship Full Stack Developer",
-    period: "Jan 2025 – Mar 2025",
-    description: `
-      During my internship at the Department of Communication and Informatics of Madiun Regency,
-      I worked as a Full Stack Developer developing responsive websites using Laravel, Vue.js, and Inertia.js.
-      I implemented CRUD features, designed MySQL database schemas, and translated Figma designs into functional web interfaces.
-      Collaborating in a four-person team, I used Git and GitHub/GitLab for version control to ensure efficient development and deployment workflows.
-    `,
-  };
+  const experiences = [
+    {
+      company: "Dinas Komunikasi dan Informatika – Kabupaten Madiun",
+      logo: kominfoLogo,
+      position: "Internship Full Stack Developer",
+      period: "Jan 2025 – Mar 2025",
+      description: [
+        "Developed responsive web applications using Laravel, Vue.js, and Inertia.js.",
+        "Implemented CRUD functionalities and optimized MySQL database schema design.",
+        "Translated UI/UX designs from Figma into functional and user-friendly interfaces.",
+        "Collaborated in a 4-member development team using Git for version control.",
+        "Improved development workflow efficiency through structured team collaboration.",
+      ],
+    },
+    {
+      company: "Rakamin Academy x Kimia Farma",
+      logo: rakaminLogo,
+      position: "Project Based Internship - Big Data Analytics",
+      period: "2024",
+      description: [
+        "Performed exploratory data analysis (EDA) on large-scale datasets.",
+        "Built and evaluated machine learning models for classification tasks.",
+        "Compared algorithms including Random Forest and Logistic Regression.",
+        "Generated actionable insights to support business decision-making.",
+      ],
+    },
+  ];
 
   return (
     <section
@@ -28,30 +46,48 @@ const Experience = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-4xl font-bold mb-4 text-cyan-300">Experience</h2>
+        <h2 className="text-4xl font-bold mb-4 text-cyan-300">
+          Experience
+        </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
           My professional experience and technical contributions.
         </p>
       </motion.div>
 
-      {/* Experience Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="max-w-5xl mx-auto bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
-      >
-        <div className="flex flex-col items-center text-center mb-4">
-          <Building2 size={40} className="text-cyan-300 mb-2" />
-          <h3 className="text-2xl font-semibold">{experience.company}</h3>
-          <p className="text-sm text-gray-400 italic">{experience.period}</p>
-          <p className="text-cyan-200 font-medium">{experience.position}</p>
-        </div>
-        <p className="text-gray-200 leading-relaxed text-justify whitespace-pre-line">
-          {experience.description}
-        </p>
-      </motion.div>
+      {/* Experience List */}
+      <div className="space-y-8">
+        {experiences.map((exp, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
+          >
+            {/* Header */}
+            <div className="flex items-center gap-4 justify-center mb-4">
+              <img
+                src={exp.logo}
+                alt={exp.company}
+                className="w-12 h-12 object-contain rounded-md bg-white p-1"
+              />
+              <div className="text-left">
+                <h3 className="text-xl font-semibold">{exp.company}</h3>
+                <p className="text-sm text-gray-400 italic">{exp.period}</p>
+                <p className="text-cyan-200 font-medium">{exp.position}</p>
+              </div>
+            </div>
+
+            {/* Description */}
+            <ul className="text-gray-200 list-disc list-inside space-y-2 text-left">
+              {exp.description.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 };
