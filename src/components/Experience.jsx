@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Building2 } from "lucide-react";
-import kominfoLogo from "../assets/diskominfo.png";
+
+import kominfoLogo from "../assets/kominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
 
 const Experience = () => {
@@ -36,7 +36,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-20 px-6 md:px-16 bg-linear-to-br from-blue-900 via-slate-900 to-cyan-900 text-white"
+      className="py-20 px-6 md:px-16 bg-gradient-to-br from-blue-900 via-slate-900 to-cyan-900 text-white"
     >
       {/* Header */}
       <motion.div
@@ -44,7 +44,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="text-center mb-12"
+        className="text-center mb-16"
       >
         <h2 className="text-4xl font-bold mb-4 text-cyan-300">
           Experience
@@ -54,38 +54,51 @@ const Experience = () => {
         </p>
       </motion.div>
 
-      {/* Experience List */}
-      <div className="space-y-8">
+      {/* Timeline */}
+      <div className="flex flex-col gap-12">
         {experiences.map((exp, index) => (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="max-w-5xl mx-auto bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
+            className={`flex ${
+              index % 2 === 0 ? "justify-start" : "justify-end"
+            }`}
           >
-            {/* Header */}
-            <div className="flex items-center gap-4 justify-center mb-4">
-              <img
-                src={exp.logo}
-                alt={exp.company}
-                className="w-12 h-12 object-contain rounded-md bg-white p-1"
-              />
-              <div className="text-left">
-                <h3 className="text-xl font-semibold">{exp.company}</h3>
-                <p className="text-sm text-gray-400 italic">{exp.period}</p>
-                <p className="text-cyan-200 font-medium">{exp.position}</p>
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="w-full md:w-1/2 bg-blue-950/40 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-blue-900 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all"
+            >
+              {/* Header (Left aligned) */}
+              <div className="flex items-start gap-4 mb-4">
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  className="w-12 h-12 object-contain rounded-md bg-white p-1"
+                />
 
-            {/* Description */}
-            <ul className="text-gray-200 list-disc list-inside space-y-2 text-left">
-              {exp.description.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </motion.div>
+                <div className="text-left">
+                  <h3 className="text-xl font-semibold">
+                    {exp.company}
+                  </h3>
+                  <p className="text-sm text-gray-400 italic">
+                    {exp.period}
+                  </p>
+                  <p className="text-cyan-200 font-medium">
+                    {exp.position}
+                  </p>
+                </div>
+              </div>
+
+              {/* Description */}
+              <ul className="text-gray-200 list-disc list-inside space-y-2 text-left">
+                {exp.description.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
         ))}
       </div>
     </section>
