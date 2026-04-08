@@ -6,11 +6,11 @@ import cvRehana from "../assets/cv_rehana.pdf";
 const Hero = () => {
   return (
     <section
-  id="home"
-  className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-16 pt-28 pb-20 
-    bg-linear-to-br from-cyan-800 via-gray-800 to-[#162d64] text-white"
->
-      {/* Kiri: Text */}
+      id="home"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-16 pt-28 pb-20 
+        bg-linear-to-br from-cyan-800 via-gray-800 to-[#162d64] text-white"
+    >
+      {/* Kiri */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -20,8 +20,9 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Hi, I’m <span className="text-cyan-300">Rehana</span> 👋
         </h1>
+
         <p className="text-lg md:text-xl text-gray-200 mb-6">
-          Web & Data Enthusiast passionate about clean design and smart data.
+          Data Analyst Enthusiast with experience in data analysis, visualization, and machine learning. Passionate about transforming data into actionable insights.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
@@ -37,12 +38,12 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="border border-cyan-300 px-6 py-3 rounded-full hover:bg-cyan-500 hover:text-blue-900 transition-all"
           >
-            View & Download CV
+            Download CV
           </a>
         </div>
       </motion.div>
 
-      {/* Kanan: Foto dan About Me */}
+      {/* Kanan */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -54,15 +55,10 @@ const Hero = () => {
           alt="Rehana"
           className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-cyan-300 shadow-lg object-cover"
         />
+
         <p className="mt-6 text-sm md:text-base text-gray-200 max-w-lg text-justify leading-relaxed">
-          I am a 2022 undergraduate student in Information Technology at
-          Sepuluh Nopember Institute of Technology (ITS), born in Tulungagung on
-          September 25, 2003. With a strong interest and certifications in data,
-          I am developing skills in analysis, processing, and visualization to
-          pursue a career as a Data Analyst. I have experience in committees,
-          organizations, and community service, as well as strong managerial,
-          communication, and public speaking abilities. I enjoy teamwork,
-          networking, and tackling challenges that drive growth.
+          I am an Information Technology student at ITS with a strong focus on data analysis and data-driven solutions. Experienced in working with real-world datasets, including sales analysis and dashboard development using tools such as Python, SQL (BigQuery), and Power BI/Looker Studio. 
+          I have built machine learning and data analysis projects to extract insights, identify patterns, and support decision-making. I am passionate about turning complex data into meaningful and impactful insights.
         </p>
       </motion.div>
     </section>
