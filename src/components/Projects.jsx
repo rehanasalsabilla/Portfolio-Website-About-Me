@@ -4,11 +4,11 @@ import { Database, Github } from "lucide-react";
 
 const featuredProjects = [
   {
-    title: "Spam Email Classification (PySpark)",
-    description:
-      "Developed a scalable spam detection model using PySpark and machine learning algorithms. Applied TF-IDF feature extraction and classification models to distinguish spam and non-spam emails.",
-    stack: ["Python", "PySpark", "TF-IDF", "Scikit-learn"],
-    link: "https://github.com/rehanasalsabilla/BigData_Machine-Learning-Classification-Using-Pyspark",
+  title: "Sales Performance Analysis Dashboard (Kimia Farma)",
+  description:
+    "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces. Built an interactive dashboard in Looker Studio to visualize key metrics such as net sales, profit distribution, and branch performance, enabling data-driven decision making.",
+  stack: ["SQL (BigQuery)", "Looker Studio", "Data Analysis", "Dashboard"],
+  link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
   },
   {
     title: "Online Retail Analysis & Forecasting",
@@ -16,6 +16,13 @@ const featuredProjects = [
       "Performed exploratory data analysis and built a forecasting model to predict future sales trends. Generated insights on customer behavior and product performance.",
     stack: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
     link: "https://github.com/rehanasalsabilla/Online-Retail-Analysis-Forecasting",
+  },
+  {
+    title: "Spam Email Classification (PySpark)",
+    description:
+      "Developed a scalable spam detection model using PySpark and machine learning algorithms. Applied TF-IDF feature extraction and classification models to distinguish spam and non-spam emails.",
+    stack: ["Python", "PySpark", "TF-IDF", "Scikit-learn"],
+    link: "https://github.com/rehanasalsabilla/BigData_Machine-Learning-Classification-Using-Pyspark",
   },
   {
     title: "Customer Segmentation using Clustering",
@@ -30,13 +37,6 @@ const featuredProjects = [
       "Built a text classification model using NLP techniques and machine learning algorithms. Applied preprocessing, TF-IDF, and evaluated model performance using accuracy metrics.",
     stack: ["Python", "Scikit-learn", "TensorFlow", "NLP"],
     link: "https://github.com/rehanasalsabilla/Emotion-Classification",
-  },
-  {
-  title: "Sales Performance Analysis Dashboard (Kimia Farma)",
-  description:
-    "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces. Built an interactive dashboard in Looker Studio to visualize key metrics such as net sales, profit distribution, and branch performance, enabling data-driven decision making.",
-  stack: ["SQL (BigQuery)", "Looker Studio", "Data Analysis", "Dashboard"],
-  link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
   },
   {
   title: "AI-Based Health & Weather Assistant",
