@@ -27,7 +27,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="bg-gradient-to-br from-cyan-800 via-gray-900 to-[#162d64] text-white py-20 px-6 md:px-16"
+      className="bg-linear-to-br from-cyan-800 via-gray-900 to-[#162d64] text-white py-20 px-6 md:px-16"
     >
       <div className="max-w-7xl mx-auto">
         
