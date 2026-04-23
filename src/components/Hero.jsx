@@ -24,12 +24,12 @@ const Hero = () => {
 
         {/* HEADLINE */}
         <p className="text-lg md:text-xl text-gray-200 mb-4">
-          Data Analyst Enthusiast focused on transforming data into actionable insights. Turning data into actionable insights to support better business decisions.
+          Data-driven Developer with experience in web development and data analysis, focused on building scalable applications and transforming data into actionable insights.
         </p>
 
         {/* SKILL HIGHLIGHT */}
         <p className="text-sm text-gray-400 mb-6">
-          Python • SQL (BigQuery) • Power BI • Looker Studio • Machine Learning
+          React • Laravel • SQL (BigQuery) • Python • Power BI • REST API
         </p>
 
         {/* CTA BUTTON */}
