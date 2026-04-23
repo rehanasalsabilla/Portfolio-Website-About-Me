@@ -92,7 +92,7 @@ const Hero = () => {
 
         {/* ABOUT */}
         <p className="mt-6 text-sm md:text-base text-gray-200 max-w-lg text-justify leading-relaxed">
-          I am an Information Technology student at ITS with a strong focus on data analysis and web development. I have experience working with real-world datasets and building data-driven applications, including sales analysis and dashboard development using Python, SQL (BigQuery), and Power BI/Looker Studio. In addition, I develop web-based systems using modern technologies and integrate data processing into application workflows. I aim to build scalable and data-driven solutions that support both user needs and business decision-making.
+          I am an Information Technology student with a strong interest in data analysis and data-driven solutions. I have experience working with real-world datasets, performing data processing, and building dashboards using Python, SQL, and visualization tools. In addition, I have basic experience in web development, including building web applications and integrating data processing into application workflows. I am passionate about leveraging both data and technology to create meaningful and impactful solutions.
         </p>
       </motion.div>
     </section>
