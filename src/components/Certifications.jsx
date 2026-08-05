@@ -9,9 +9,21 @@ const certificates = [
     date: "2026",
     link: "https://drive.google.com/file/d/1uVlmtJjKcQyNGOiE7LQ4iLgGLhfv0Kuk/view?usp=sharing",
   },
+    {
+    title: "Data Analyst & Business Intelligence – Internship",
+    issuer: "Celerates Acceleration Mastery Program (CAMP) Batch 4",
+    date: "Jul 2026",
+    link: "https://drive.google.com/file/d/1ON5Ea4MQ4_tpb86FOscL0FO675mk2XPQ/view?usp=sharing",
+  },
+  {
+    title: "Data Analyst & Business Intelligence – Completion (90%+ Attendance)",
+    issuer: "Celerates Acceleration Mastery Program (CAMP) Batch 4",
+    date: "Jul 2026",
+    link: "https://drive.google.com/file/d/1Nk6j8euVf2wG5lufFjm2nSvvPUdgeP1l/view?usp=sharing",
+  },
   {
     title: "Artificial Intelligence Fundamentals",
-    issuer: "AI Certification",
+    issuer: "Hactiv8",
     date: "2025",
     link: "https://drive.google.com/file/d/1-p5xqDePCQnQTXC-5nvMZcOY7PeaIxOk/view?usp=sharing",
   },
@@ -56,6 +68,12 @@ const certificates = [
     issuer: "Coursera (Google)",
     date: "Jan 2023",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/DWPFVY6MZLUE",
+  },
+  {
+    title: "Soft Skills on Job Readiness Training",
+    issuer: "INCO Academy – Work in Tech Indonesia",
+    date: "2025",
+    link: "https://drive.google.com/file/d/1ZoDjDcjpBInvaYOFpkiwrl7L5I_6pQ8c/view?usp=sharing",
   },
 ];
 
