@@ -1,7 +1,24 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --color-cream: #f3eee3;
+  --color-cream-light: #fbf8f1;
+  --color-cream-dark: #e8e1d0;
+  --color-ink: #26302a;
+  --color-moss: #5f7350;
+  --color-moss-dark: #3e4e33;
+  --color-forest: #2a3524;
+  --color-sage: #a9bb94;
+  --color-sage-light: #e4ead9;
+}
 
 :root {
-  --font-sans: "Poppins", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
 }
 
 html {
@@ -9,15 +26,64 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
-  background: #faf8f3;
-  color: #26332d;
+  font-family: var(--font-body);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  position: relative;
 }
 
-*{
-  box-sizing:border-box;
+/* subtle woven/grain texture so the cream doesn't read as flat white */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
 }
 
-section{
-  scroll-margin-top:90px;
-} 
+* {
+  box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 90px;
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.font-mono-data {
+  font-family: var(--font-mono);
+}
+
+/* leaf timeline connector */
+.timeline-line {
+  background: linear-gradient(to bottom, var(--color-sage), transparent);
+}
+
+/* scrollbar - keep it quiet */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
