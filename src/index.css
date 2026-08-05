@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: "Poppins", sans-serif;
 }
 
-html, body {
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-linear-to-b from-[#0f172a] via-[#1e293b] to-[#334155] text-white font-sans;
+  font-family: var(--font-sans);
+  background: #faf8f3;
+  color: #26332d;
 }
+
+*{
+  box-sizing:border-box;
+}
+
+section{
+  scroll-margin-top:90px;
+} 

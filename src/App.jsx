@@ -7,17 +7,30 @@ import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import CVSection from "./components/CVSection";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
+import WhyMe from "./components/WhyMe";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="bg-[#FAF8F3]">
       <Navbar />
+
       <Hero />
-      <Experience />
+
+      <Education />
+
       <Skills />
+
+      <Experience />
+
       <Projects />
+
       <Certifications />
+
+      <WhyMe />
+
       <CVSection />
+
       <Footer />
     </div>
   );
