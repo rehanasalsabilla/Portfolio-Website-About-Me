@@ -41,7 +41,7 @@ const Navbar = () => {
           onClick={() => scrollToSection("home")}
           className="text-xl md:text-2xl font-display font-semibold text-cream-light tracking-tight"
         >
-          Rehana Putri<span className="text-sage">.</span>
+          Rehana Putri Salsabilla<span className="text-sage">.</span>
         </button>
 
         <ul className="hidden md:flex space-x-7 text-cream-light/90 text-sm font-medium">
