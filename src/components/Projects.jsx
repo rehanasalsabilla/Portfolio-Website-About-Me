@@ -3,16 +3,25 @@ import { motion } from "framer-motion";
 import { Github, ArrowRight } from "lucide-react";
 
 const featuredProject = {
-  title: "Sales Performance Analysis Dashboard (Kimia Farma)",
+  title: "Sales & Production Dashboard (Manufacturing Client)",
   category: "data",
   description:
-    "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces, identifying top-performing regions and branches with high ratings but low transaction volume.",
-  role: "Analyzed the raw transactional dataset end to end, from SQL querying in BigQuery to building the final Looker Studio dashboard used for business reporting.",
-  stack: ["BigQuery", "SQL", "Looker Studio", "Data Analysis"],
-  link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
+    "Built two end-to-end Looker Studio dashboards by consolidating 19 relational tables, covering Rp291.3 billion in revenue across 2,282 sales orders and 4,255 production orders for a manufacturing client.",
+  role: "Delivered cross-functional business insights — including customer revenue concentration, SKU margin disparity, and machine utilization gaps — that informed data-driven follow-up actions across sales and production teams.",
+  stack: ["Looker Studio", "SQL", "Data Modeling", "Dashboard Design"],
+  link: "https://github.com/rehanasalsabilla",
 };
 
 const projects = [
+    {
+    title: "Sales Performance Analysis Dashboard (Kimia Farma)",
+    category: "data",
+    description:
+      "Analyzed multi-source transactional data using Google BigQuery to evaluate business performance across branches and provinces, identifying top-performing regions and branches with high ratings but low transaction volume.",
+    role: "Analyzed the raw transactional dataset end to end, from SQL querying in BigQuery to building the final Looker Studio dashboard used for business reporting.",
+    stack: ["BigQuery", "SQL", "Looker Studio", "Data Analysis"],
+    link: "https://github.com/rehanasalsabilla/kimia-farma-bigquery-analysis",
+  },
   {
     title: "Spam Email Classification",
     category: "data",
