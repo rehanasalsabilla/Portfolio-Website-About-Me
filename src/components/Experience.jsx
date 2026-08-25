@@ -11,7 +11,7 @@ const experiences = [
     company: "Cerelates – Data Analyst & Business Intelligence Bootcamp",
     logo: celeratesLogo,
     position: "Data Analyst Trainee",
-    period: "Mar 2026 – Present",
+    period: "Mar 2026 – June 2026",
     location: "Remote",
     summary:
       "End-to-end data analysis training: cleaning, EDA, dashboarding, and business case studies.",
