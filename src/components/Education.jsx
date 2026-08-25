@@ -6,7 +6,7 @@ const education = [
   {
     school: "Institut Teknologi Sepuluh Nopember (ITS)",
     degree: "Bachelor of Information Technology",
-    period: "2022 – Present",
+    period: "2022 – 2026",
     detail: "GPA 3.70 / 4.00",
     note: "Relevant coursework: Artificial Intelligence, Data Mining, Machine Learning, Big Data, Statistical Analysis.",
   },

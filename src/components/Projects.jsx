@@ -9,7 +9,7 @@ const featuredProject = {
     "Built two end-to-end Looker Studio dashboards by consolidating 19 relational tables, covering Rp291.3 billion in revenue across 2,282 sales orders and 4,255 production orders for a manufacturing client.",
   role: "Delivered cross-functional business insights — including customer revenue concentration, SKU margin disparity, and machine utilization gaps — that informed data-driven follow-up actions across sales and production teams.",
   stack: ["Looker Studio", "SQL", "Data Modeling", "Dashboard Design"],
-  link: "https://github.com/rehanasalsabilla",
+  link: "https://github.com/rehanasalsabilla/Sales-Production-Dashboard-Manufacturing-Client",
 };
 
 const projects = [
