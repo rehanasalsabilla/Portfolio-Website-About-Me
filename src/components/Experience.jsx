@@ -5,8 +5,24 @@ import { MapPin, X, Leaf } from "lucide-react";
 import kominfoLogo from "../assets/diskominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
 import celeratesLogo from "../assets/celerates.png";
+import bimaLogo from "../assets/bima-pelindo.png";
 
 const experiences = [
+  {
+    company: "PT Berkah Industri Mesin Angkat (PT BIMA) – Pelindo Group",
+    logo: bimaLogo,
+    position: "Data Analyst Intern – Logistics Division (Procurement Planning)",
+    period: "Sep 2026 – Present",
+    location: "Surabaya, East Java",
+    summary:
+      "Learning end-to-end procurement data flow under the Planning Sub-Division, from Excel-based data handling to Purchase Requisition packaging within an SAP-based business process.",
+    details: [
+      "Processed and organized procurement-related data in Excel under the Planning Sub-Division of the Logistics Division, cross-checking it against datasets already connected to Looker Studio dashboards to ensure consistency between raw data and existing visualizations.",
+      "Prepared Purchase Requisition (PR) packages prior to handover to the Procurement Sub-Division, learning the documentation and validation steps required before a request moves into the procurement cycle.",
+      "Learning the end-to-end procurement business process within an SAP-based ERP environment, gaining exposure to how planning, requisition, and procurement stages are interconnected in a real operational setting.",
+    ],
+    skills: ["Excel", "Data Matching", "Looker Studio", "SAP", "Procurement Process"],
+  },
   {
     company: "Cerelates – Data Analyst & Business Intelligence Bootcamp",
     logo: celeratesLogo,
