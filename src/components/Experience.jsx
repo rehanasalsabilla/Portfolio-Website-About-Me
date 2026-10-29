@@ -6,13 +6,38 @@ import kominfoLogo from "../assets/diskominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
 import celeratesLogo from "../assets/celerates.png";
 import bimaLogo from "../assets/bima-pelindo.png";
+import infomediaLogo from "../assets/infomedia.png";
 
-const experiences = [
+const experiences = [ 
+  {
+    company: "PT Infomedia Nusantara",
+    logo: infomediaLogo,
+    position: "Data Analyst Intern – Government & Energy Operations",
+    period: "Oct 2026 – Present",
+    location: "Indonesia",
+    summary:
+      "Developing business intelligence dashboards and analyzing operational data to support performance monitoring and data-driven decision making across the Government & Energy Segment 3.",
+    details: [
+      "Developed and enhanced the Executive Traffic Dashboard using Looker Studio to monitor inbound call performance, service level, service quality, and digital channel metrics across government and energy projects.",
+      "Designed and refined the SDM Performance Dashboard to support employee performance monitoring through agent profiles, workforce information, and available operational indicators.",
+      "Developed and enhanced the BAPP Detail Dashboard using Looker Studio to monitor billing administration, BAPP status, FASSO validation, invoice processes, and monthly Accrue and Realisasi recording.",
+      "Analyzed operational data and evaluated dashboard metrics, filters, and visualizations to improve data accuracy, reporting clarity, and alignment with business requirements.",
+      "Collaborated with the division to understand operational processes and translate business requirements into relevant dashboard insights and monitoring visualizations."
+    ],
+    skills: [
+      "Looker Studio",
+      "Data Analysis",
+      "Business Intelligence",
+      "Data Visualization",
+      "Google Sheets",
+      "Dashboard Development"
+    ],
+  },
   {
     company: "PT Berkah Industri Mesin Angkat (PT BIMA) – Pelindo Group",
     logo: bimaLogo,
     position: "Data Analyst Intern – Logistics Division (Procurement Planning)",
-    period: "Sep 2026 – Present",
+    period: "Sep 2026 – Oct 2026",
     location: "Surabaya, East Java",
     summary:
       "Learning end-to-end procurement data flow under the Planning Sub-Division, from Excel-based data handling to Purchase Requisition packaging within an SAP-based business process.",
