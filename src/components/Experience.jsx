@@ -6,7 +6,7 @@ import kominfoLogo from "../assets/diskominfo.png";
 import rakaminLogo from "../assets/rakamin.png";
 import celeratesLogo from "../assets/celerates.png";
 import bimaLogo from "../assets/bima-pelindo.png";
-import infomediaLogo from "../assets/infomedia.png";
+import infomediaLogo from "../assets/logo_infomedia.png";
 
 const experiences = [ 
   {
