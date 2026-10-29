@@ -12,7 +12,7 @@ const experiences = [
   {
     company: "PT Infomedia Nusantara",
     logo: infomediaLogo,
-    position: "Data Analyst Intern – Government & Energy Operations",
+    position: "Junior Data & Quality Analyst – Government & Energy Operations",
     period: "Oct 2026 – Present",
     location: "Indonesia",
     summary:
